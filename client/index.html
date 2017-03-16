@@ -1,0 +1,23 @@
+<html ng-app='app'>
+<head>
+	<title>Discussion Board</title>
+	<script type="text/javascript" src = '/bower_components/angular/angular.js'></script>
+	<script type="text/javascript" src = '/bower_components/angular-route/angular-route.js'></script>
+	<script type="text/javascript" src = '/bower_components/jquery/dist/jquery.min.js'></script>
+	<script type="text/javascript" src = '/bower_components/angular-messages/angular-messages.min.js'>
+		angular.module('app', ['ngMessages']);
+
+	</script>
+	<script type="text/javascript" src = '/bower_components/bootstrap/dist/js/bootstrap.min.js'>
+	</script>
+	<script type="text/javascript" src="angular/app.js"></script>
+	<script type="text/javascript" src="angular/controllers/sheetController.js"></script>
+	<script type="text/javascript" src="angular/factories/sheetFactory.js"></script>
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="padding: 50px">
+	<div ng-view=''>
+</div>
+</body>
+</html>
