@@ -1,8 +1,6 @@
 app.controller('sheetController', ['$scope', '$location', 'sheetFactory',function($scope, $location, sheetFactory){
 	index = function(){
 		sheetFactory.get_sheet(function(returned_data){
-			console.log("In index");
-			console.log(returned_data.data.data.data);
 			$scope.lists = returned_data.data.data.data;
 		})
 	}
